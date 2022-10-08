@@ -1,32 +1,89 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import { NavTop } from './components/navtop'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="home bg-light">
+      <NavTop />
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
+      <div className="home-content px-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Sapiente deserunt laudantium ratione facilis sit repellendus veniam sed, vero iure ea tenetur, alias magni ex mollitia! 
+        Eum perferendis debitis dolores itaque.
+      </div>
     </div>
   )
 }
