@@ -1,8 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/navtop.css"
 
 export function NavTop(){
     const [navItemsActive, setNavItemsActive] = useState<boolean>(false)
+    // let scrollY = '';
+
+    useEffect(()=>{
+        if(navItemsActive){
+            console.log(window.scrollY);
+            document.body.style.top = `-${window?.scrollY}px`
+            document.body.style.position = "fixed";
+            
+            
+        }
+        else{
+            const scrollY = document.body.style.top;
+            document.body.style.position = '';
+            document.body.style.top = '';
+            window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        }
+    },[navItemsActive])
 
     return(
         <div className={

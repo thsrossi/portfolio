@@ -47,7 +47,7 @@
     .navtop nav ul{
         display:flex!important;
         flex-direction: column!important;
-        position: absolute;
+        position: fixed;
         width: 100%;
         top: 64px;
         right: 0px;
