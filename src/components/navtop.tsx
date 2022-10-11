@@ -1,29 +1,55 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/navtop.css"
-import Avatar from "../assets/images/Avatar.svg"
 
 export function NavTop(){
     const [navItemsActive, setNavItemsActive] = useState<boolean>(false)
+    // let scrollY = '';
+
+    useEffect(()=>{
+        if(navItemsActive){
+            console.log(window.scrollY);
+            document.body.style.top = `-${window?.scrollY}px`
+            document.body.style.position = "fixed";
+            
+            
+        }
+        else{
+            const scrollY = document.body.style.top;
+            document.body.style.position = '';
+            document.body.style.top = '';
+            window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        }
+    },[navItemsActive])
 
     return(
-        <div className="sticky-top navbar px-5">
+        <div className={
+            `sticky-top navtop d-flex justify-content-between py-3 align-items-md-center
+            align-items-start px-4 px-md-5
+            `}>
             <div className="matheus d-flex flex-row align-items-center">
+                <h3 className="mb-0"><span>Matheus</span> Rossi</h3>
                 
-                <div className="image-picture mr-4"><img className="profile-picture bg-white" src={Avatar}/></div>
-                
-                <h3 className="mb-0 d-none d-md-block">Matheus Rossi</h3>
             </div>
-            <button className={"d-block d-md-none"} onClick={()=>setNavItemsActive(!navItemsActive)}>_</button>
-            <div className={`navtop-items d-md-block 
+            <nav className="d-md-block d-flex justify-content-center flex-column align-items-center">
+            <button className={`d-md-none text-center`} onClick={()=>setNavItemsActive(!navItemsActive)}>
+
+                {navItemsActive ? 
+                <i className="fa fa-times fa-2xl mt-3"></i>
+                : <i className="fa fa-bars fa-xl mt-3"></i>  
+                }
+            </button>
+            <ul className={`navtop-items d-md-flex align-items-md-center mb-md-0 d-flex px-4 px-md-0 mt-0 flex-row
             ${navItemsActive ? 
-            'd-flex flex-column col-12 justify-content-end align-items-end p-0 mt-3' : 
-            'd-none'
+            'active' : 
+            ''
             }`}>
-                <a className="mr-md-4" onClick={()=>setNavItemsActive(!navItemsActive)}>Home</a>
-                <a className="mr-md-4" onClick={()=>setNavItemsActive(!navItemsActive)}>Sobre mim</a>
-                <a className="mr-md-4" onClick={()=>setNavItemsActive(!navItemsActive)}>Projetos</a>
-                <a onClick={()=>setNavItemsActive(!navItemsActive)}>Contato</a>
-            </div>
+                <a className="my-0 mr-md-3 px-md-1" onClick={()=>setNavItemsActive(!navItemsActive)}>Home</a>
+                <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(!navItemsActive)}>Sobre mim</a>
+                <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(!navItemsActive)}>Projetos</a>
+                <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(!navItemsActive)}>Contato</a>
+                <a className="d-none d-md-flex align-items-center"><i className="fa-regular fa-envelope fa-lg"></i></a>
+            </ul>
+            </nav>
         </div>
     )
 }
