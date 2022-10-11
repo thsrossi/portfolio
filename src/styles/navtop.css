@@ -14,8 +14,10 @@
 }
 
 .profile-picture {
-    max-height: 35px;
-    max-width: 35px;
+    max-height: 40px;
+    max-width: 40px;
+    clip-path: circle();
+    padding: 3px
 }
 
 .navbar a {
@@ -26,4 +28,13 @@
 .navbar a:hover {
     color: #6ad1cf !important;
     cursor: pointer !important
+}
+
+.image-picture{
+    background: rgb(106,209,207);
+    background: linear-gradient(32deg, rgba(106,209,207,1) 0%, rgba(0,212,255,1) 38%, rgba(184,0,255,1) 74%);
+    max-height: 47px;
+    max-width: 47px;
+    clip-path: circle();
+    padding: 3px
 }

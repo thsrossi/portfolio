@@ -8,7 +8,9 @@ export function NavTop(){
     return(
         <div className="sticky-top navbar px-5">
             <div className="matheus d-flex flex-row align-items-center">
-                <img className="profile-picture bg-white mr-4" src={Avatar}/>
+                
+                <div className="image-picture mr-4"><img className="profile-picture bg-white" src={Avatar}/></div>
+                
                 <h3 className="mb-0 d-none d-md-block">Matheus Rossi</h3>
             </div>
             <button className={"d-block d-md-none"} onClick={()=>setNavItemsActive(!navItemsActive)}>_</button>
