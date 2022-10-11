@@ -60,12 +60,13 @@
     }
 
     .navtop nav ul.active{
-        height: calc(100vh - ((2em * 4))); 
+        height: calc(100vh - 64px); 
         visibility: visible;
         overflow-y: hidden;
     }
 
     .navtop a{
+        font-size: 1.5em;
         padding: 2em 0;
         border-bottom: 1px solid #3c4043!important;
     }
