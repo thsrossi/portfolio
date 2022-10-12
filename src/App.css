@@ -30,6 +30,83 @@ body{
   font-weight: 400;
 }
 
+.rossinho{
+  max-width: 100%;
+  position: relative;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+@keyframes float{
+  0%{
+    transform: translateY(0px);
+  }
+
+  40%{
+    transform: translateY(-25px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.linguagens{
+  z-index: 1;
+  position: absolute;
+  background-color: #25262a;
+  padding: 4%;
+  clip-path: circle();
+  transform: translateY(0px);
+  animation-name: float;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out
+}
+
+.background-ball{
+  background: rgb(40,41,45);
+  background: linear-gradient(125deg, rgba(40,41,45,1) 0%, rgba(40,41,45,0.8) 68%, rgba(40,41,45,0.20379901960784315) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  clip-path: circle();
+  z-index: 0;
+}
+
+.react{
+  bottom: 5%;
+  right: 0px;
+  width: 25%;
+}
+
+.react-img{
+  width:100%;
+}
+
+.typescript{
+  bottom: 30%;
+  left: 4%;
+  width: 20%;
+}
+
+.ts-img{
+  width: 100%;
+}
+
+.git-img{
+  width:100%
+}
+
+.git{
+  top: 15%;
+  right: 10%;
+  width: 18%
+}
+
 @media(max-width: 767.98px){
   .home h1{
     font-size: 2.4rem
