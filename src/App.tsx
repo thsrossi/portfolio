@@ -1,7 +1,9 @@
 import { useState } from 'react'
-import Avatar from './assets/images/avatardev.svg'
-import Rossinho from './assets/images/rossinho.png'
+import ReactIcon from './assets/images/react.svg'
 import './App.css'
+import Rossinho from './assets/images/rossinho.png'
+import TypeScript from './assets/images/Typescript.svg'
+import Git from './assets/images/Git.png'
 import { NavTop } from './components/navtop'
 
 
@@ -11,13 +13,26 @@ function App() {
   return (
     <div className="home">
       <NavTop />
-      <div className="px-4 px-md-5 row mx-0 mt-4 mt-md-5 ola-mundo">
+      <div className="px-4 px-md-5 row mx-0 mt-4 mt-md-5 mt-lg-2 ola-mundo align-items-end">
         
-        <div className="my-md-5 mt-3 mb-3 py-0 py-md-5 text-center col-12 col-md-6 px-0"> 
+        <div className=" col-12 col-md-6 px-0 d-flex align-items-start justify-content-center flex-column my-0 my-lg-5 my-md-4 py-0 py-lg-5"> 
           <h1 className='mb-4 mb-md-5 mx-0 text-left'>Olá, me chamo Matheus Rossi!</h1>
-          <p className='text-left'>Sou desenvolvedor front end focado em React, performance e aplicações responsivas.</p>
+          <p className='text-left mx-0 mb-md-5 p-0 pb-md-5'>Sou desenvolvedor front end focado em React, performance e aplicações responsivas.</p>
         </div>
-        <img className='col-12 col-md-6 text-right' src={Rossinho}/>
+        <div className='col-12 col-md-6 px-0 linguagens-rossiho'>
+          <div className="background-ball">
+          </div>
+          <img className="rossinho" src={Rossinho}/> 
+          <div className='linguagens react'>
+            <img className="react-img" src={ReactIcon}/>
+          </div>
+          <div className='linguagens typescript'>
+            <img className="ts-img" src={TypeScript}/>
+          </div>
+          <div className='linguagens git'>
+            <img className="git-img" src={Git}/>
+          </div>
+        </div> 
       </div>
       <div className='projetos px-4 px-md-5 row mx-0 pt-4 pt-md-5'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quas fugit aperiam voluptatem sed accusantium corporis, laudantium deleniti, ratione architecto expedita. Minus voluptatibus dolores voluptas repellat quasi debitis esse velit!
