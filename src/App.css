@@ -44,11 +44,38 @@ body{
   }
 
   40%{
-    transform: translateY(-25px);
+    transform: translateY(-30px);
   }
 
   100%{
     transform: translateY(0px);
+  }
+  
+}
+@keyframes float1{
+  0%{
+    transform: translateY(-25px);
+  }
+
+  40%{
+    transform: translateY(0px);
+  }
+
+  100%{
+    transform: translateY(-25px);
+  }
+}
+@keyframes float2{
+  0%{
+    transform: translateY(25px);
+  }
+
+  40%{
+    transform: translateY(0px);
+  }
+
+  100%{
+    transform: translateY(25px);
   }
 }
 
@@ -58,9 +85,7 @@ body{
   background-color: #25262a;
   padding: 4%;
   clip-path: circle();
-  transform: translateY(0px);
-  animation-name: float;
-  animation-duration: 5s;
+  /* transform: translateY(0px); */
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out
 }
@@ -78,9 +103,11 @@ body{
 }
 
 .react{
+  animation-name: float;
   bottom: 5%;
   right: 0px;
   width: 25%;
+  animation-duration: 4.5s;
 }
 
 .react-img{
@@ -88,9 +115,11 @@ body{
 }
 
 .typescript{
+  animation-name: float1;
   bottom: 30%;
   left: 4%;
   width: 20%;
+  animation-duration: 5s;
 }
 
 .ts-img{
@@ -102,9 +131,12 @@ body{
 }
 
 .git{
+  animation-name: float2;
   top: 15%;
   right: 10%;
-  width: 18%
+  width: 18%;
+  animation-duration: 4s!important;
+  /* animation-delay: 0.5s; */
 }
 
 @media(max-width: 767.98px){
