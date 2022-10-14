@@ -27,7 +27,7 @@ export function NavTop(){
             align-items-start px-4 px-md-5
             `}>
             <div className="matheus d-flex flex-row align-items-center">
-                <h3 className="mb-0"><span>Matheus</span> Rossi</h3>
+                <h2 className="mb-0"><span>Matheus</span> Rossi</h2>
                 
             </div>
             <nav className="d-md-block d-flex justify-content-center flex-column align-items-center">
@@ -43,11 +43,11 @@ export function NavTop(){
             'active' : 
             ''
             }`}>
-                <a className="my-0 mr-md-3 px-md-1" onClick={()=>setNavItemsActive(!navItemsActive)}>Home</a>
-                <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(!navItemsActive)}>Sobre mim</a>
-                <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(!navItemsActive)}>Projetos</a>
-                <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(!navItemsActive)}>Contato</a>
-                <a className="d-none d-md-flex align-items-center"><i className="fa-regular fa-envelope fa-lg"></i></a>
+                <a className="my-0 mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Home</a>
+                <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Sobre mim</a>
+                <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Projetos</a>
+                <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Contato</a>
+                <a href="mailto:matheusbprossi@gmail.com?subject=Olá,%20vim%20por%20seu%20portfolio" className="d-none d-md-flex align-items-center"><i className="fa-regular fa-envelope fa-lg"></i></a>
             </ul>
             </nav>
         </div>

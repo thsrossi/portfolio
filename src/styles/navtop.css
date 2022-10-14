@@ -24,7 +24,8 @@
 
 .navtop a {
     font-weight: 500;
-
+    font-size: 1.1em;
+    text-decoration: none!important
 }
 
 .navtop a i{
@@ -71,5 +72,10 @@
         font-size: 1.5em;
         padding: 2em 0;
         border-bottom: 1px solid #3c4043!important;
+    }
+
+    .navtop a:hover{
+        padding-inline-start: 1em;
+        border-left: 0.5em solid #6ad1cf;
     }
 }
