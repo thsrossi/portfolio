@@ -17,7 +17,10 @@ function App() {
         
         <div className=" col-12 col-md-6 px-0 d-flex align-items-start justify-content-center flex-column my-0 my-lg-5 my-md-4"> 
           <h1 className='mb-4 mb-md-5 mx-0 text-left'>Olá, me chamo <span>Matheus Rossi!</span></h1>
-          <p className='text-left mx-0 p-0 '>Sou desenvolvedor front end focado em React, performance e aplicações responsivas.</p>
+          <p className='text-left mx-0 p-0'>Sou desenvolvedor front end focado em React, performance e aplicações responsivas.</p>
+          <a className='mb-3' target={'_blank'} href='https://api.whatsapp.com/send?phone=5541984567873&text=Ol%C3%A1%2C%20vim%20por%20seu%20portfolio'>
+            Vamos Conversar!
+          </a>
         </div>
         <div className='col-12 col-md-6 pr-0 pl-0 pl-md-3 linguagens-rossinho'>
           <div className="background-ball">
