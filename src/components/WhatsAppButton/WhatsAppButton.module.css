@@ -8,6 +8,9 @@
     height: 60px;
     border:none;
     z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .whatsAppButton img{

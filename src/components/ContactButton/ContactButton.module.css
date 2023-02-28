@@ -1,0 +1,14 @@
+.contact{
+    border: 2px solid white;
+    padding: 0.5rem;    
+    font-weight: 600;
+    border-radius: 3px;
+    transition: 500ms;
+}
+
+.contact:hover{
+    text-decoration: none;
+    border-color:#6ad1cf;
+    background-color: #6ad1cf;
+    color: #212529;
+}
