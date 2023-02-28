@@ -7,7 +7,7 @@ import ContactButton from '../../ContactButton/ContactButton'
 
 export default function MainSection(){
     return(
-        <main className="px-2 px-md-5 row mx-5 mt-4 mt-md-5 mt-lg-2 align-items-end justify-content-between">
+        <main className="px-2 px-md-5 row mx-5 mt-4 mt-2 align-items-end justify-content-between">
         
         <div className=" col-12 col-lg-6 px-0 d-flex align-items-start justify-content-center flex-column my-auto"> 
           <h1 className='mb-2 mb-lg-4 mx-0 text-left'>Olá, me chamo <span>Matheus Rossi!</span></h1>
@@ -17,7 +17,10 @@ export default function MainSection(){
           Atualmente, trabalho como Desenvolvedor Front-end na MaxCore Informática, onde utilizo ReactJS 
           com TypeScript e tecnologias suplementares como Git, Chakra UI, Material UI, Bootstrap.
           </p>
-          <ContactButton/>
+          <div className='w-100 d-flex justify-content-center'>
+            
+            <ContactButton className='mb-4 mb-lg-0'/>
+            </div>
         </div>
         <div className='col-12 col-lg-5 pr-0 pl-0 pl-md-3'>
           <div className={style.backgroundBall}>

@@ -45,7 +45,7 @@ export function NavTop(){
             ''
             }`}>
                 <a className="my-0 mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Home</a>
-                <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Sobre mim</a>
+                <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Experiência</a>
                 <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Projetos</a>
                 <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Contato</a>
                 <a href="mailto:matheusbprossi@gmail.com?subject=Olá,%20vim%20por%20seu%20portfolio" className="d-none d-md-flex align-items-center">
