@@ -4,7 +4,9 @@ import './App.css'
 import Rossinho from './assets/images/rossinho.png'
 import TypeScript from './assets/images/Typescript.svg'
 import Git from './assets/images/Git.png'
-import { NavTop } from './components/navtop'
+import { NavTop } from './components/NavTop/navtop'
+import WhatsAppButton from './components/WhatsAppButton/whatsappButton'
+
 
 
 function App() {
@@ -13,13 +15,17 @@ function App() {
   return (
     <div className="home">
       <NavTop />
-      <div className="px-4 px-md-5 row mx-0 mt-4 mt-md-5 mt-lg-2 ola-mundo align-items-center">
+      <WhatsAppButton/>
+      <div className="px-4 px-md-5 row mx-5 mt-4 mt-md-5 mt-lg-2 ola-mundo align-items-end justify-content-between">
         
-        <div className=" col-12 col-md-6 px-0 d-flex align-items-start justify-content-center flex-column my-0 my-lg-5 my-md-4"> 
-          <h1 className='mb-4 mb-md-5 mx-0 text-left'>Olá, me chamo <span>Matheus Rossi!</span></h1>
-          <p className='text-left mx-0 p-0 '>Sou desenvolvedor front end focado em React, performance e aplicações responsivas.</p>
+        <div className=" col-12 col-lg-6 px-0 d-flex align-items-start justify-content-center flex-column my-auto"> 
+          <h1 className='mb-2 mb-lg-4 mx-0 text-left'>Olá, me chamo <span>Matheus Rossi!</span></h1>
+          <p className='text-left mx-0 p-0 '>Sou desenvolvedor Front-End focado em React, performance e aplicações responsivas, 
+          com ampla experiência em tecnologias como TypeScript, HTML, CSS, JavaScript, Material-UI e Git. 
+          Atualmente, trabalho como Desenvolvedor Front-end na Maxcore Informática, onde utilizo ReactJS com TypeScript e tecnologias suplementares como Git, Chakra UI, Material UI, Bootstrap
+          </p>
         </div>
-        <div className='col-12 col-md-6 pr-0 pl-0 pl-md-3 linguagens-rossinho'>
+        <div className='col-12 col-lg-5 pr-0 pl-0 pl-md-3 linguagens-rossinho'>
           <div className="background-ball">
           </div>
           <img className="rossinho" src={Rossinho}/> 

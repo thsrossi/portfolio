@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "../styles/navtop.css"
+import WhatsApp from '../assets/images/whatsapp-svgrepo-com.svg' 
+import "./navtop.css"
 
 export function NavTop(){
     const [navItemsActive, setNavItemsActive] = useState<boolean>(false)
@@ -47,7 +48,10 @@ export function NavTop(){
                 <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Sobre mim</a>
                 <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Projetos</a>
                 <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Contato</a>
-                <a href="mailto:matheusbprossi@gmail.com?subject=Olá,%20vim%20por%20seu%20portfolio" className="d-none d-md-flex align-items-center"><i className="fa-regular fa-envelope fa-lg"></i></a>
+                <a href="mailto:matheusbprossi@gmail.com?subject=Olá,%20vim%20por%20seu%20portfolio" className="d-none d-md-flex align-items-center">
+                    <i className="fa-regular fa-envelope fa-lg mr mr-md-3 px-md-1"></i>
+                </a>
+                {/* <a style={{color:'#6ad1cf!important'}}><img src={WhatsApp} width={'22px'}/></a> */}
             </ul>
             </nav>
         </div>

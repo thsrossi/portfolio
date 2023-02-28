@@ -1,0 +1,16 @@
+.whatsAppButton{
+    position: fixed;
+    bottom: 2rem;
+    right:2rem;
+    background-color: #6ad1cf;
+    clip-path: circle();
+    width: 60px;
+    height: 60px;
+    border:none;
+    z-index: 99;
+}
+
+.whatsAppButton img{
+    width: 35px;
+    margin: auto
+}
