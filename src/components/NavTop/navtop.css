@@ -24,16 +24,16 @@
 
 .navtop a {
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 1em;
     text-decoration: none!important
 }
 
 .navtop a i{
-    padding-top: 0.15rem!important;
+    padding-top: 0.1rem!important;
     color:#6ad1cf
 }
 
-.navtop a:hover {
+.navtop a:not(:last-child):hover {
     color: #6ad1cf!important;
     background-color: #383838;
     cursor: pointer
