@@ -38,7 +38,7 @@ export default function Accordion() {
                 </div>
                 <div className="accordion-item bg-transparent">
                     <div className="accordion-header" id="headingThree">
-                        <button className={`accordion-button bg-transparent ${style.btnCustom}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        <button className={`accordion-button collapsed bg-transparent ${style.btnCustom}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                             <div id={`${style.icon}`} className='mr-3'>
 
                             <i className="fa-solid fa-headset fa-2x"></i>
@@ -47,7 +47,7 @@ export default function Accordion() {
                             Centrais de atendimento telefônico
                         </button>
                     </div>
-                    <div id="collapseThree" className="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
                         <div className="accordion-body">
                             Trabalhei em centrais de atendimento telefônico, onde adquiri experiência em vendas e suporte ao cliente, complementando minhas habilidades de comunicação e atendimento ao cliente.
                         </div>
