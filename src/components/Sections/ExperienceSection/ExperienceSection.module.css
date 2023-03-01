@@ -1,5 +1,10 @@
 .experiencia {
 
     background-color: #25262a;
-
+    
 }
+
+@media(max-width: 992px){
+    .experiencia{padding-bottom: calc(2rem + 60px);}
+}
+

@@ -18,9 +18,9 @@ export default function MainSection(){
           Atualmente, trabalho como Desenvolvedor Front-end na MaxCore Informática, onde utilizo ReactJS 
           com TypeScript e tecnologias suplementares como Git, Chakra UI, Material UI, Bootstrap.
           </p>
-          <div className='w-100 d-flex justify-content-center'>
+          <div className='w-100 d-flex justify-content-center my-4 my-lg-4'>
             
-            <ContactButton className='mb-4 mb-lg-0'/>
+            <ContactButton />
             </div>
         </div>
         <div className='col-12 col-lg-5 pr-0 pl-0 pl-md-3'>
