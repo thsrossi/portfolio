@@ -33,7 +33,7 @@
     color:#6ad1cf
 }
 
-.navtop a:not(:last-child):hover {
+.navtop a:not(:last-child):hover, .navtop a.active{
     color: #6ad1cf!important;
     background-color: #383838;
     cursor: pointer

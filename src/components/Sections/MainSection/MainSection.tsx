@@ -7,7 +7,7 @@ import ContactButton from '../../ContactButton/ContactButton'
 
 export default function MainSection(){
     return(
-        <main className="px-2 px-md-5 row mx-5 mt-4 mt-2 align-items-end justify-content-between">
+        <section className="px-2 px-md-5 row mx-5 mt-4 mt-2 align-items-end justify-content-between" id="main">
         
         <div className=" col-12 col-lg-6 px-0 d-flex align-items-start justify-content-center flex-column my-auto"> 
           <h1 className='mb-2 mb-lg-4 mx-0 text-left'>Olá, me chamo <span>Matheus Rossi!</span></h1>
@@ -36,6 +36,6 @@ export default function MainSection(){
             <img className={style.gitImg} src={Git}/>
           </div>
         </div> 
-      </main>
+      </section>
     )
 }
