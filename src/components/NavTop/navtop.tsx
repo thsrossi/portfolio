@@ -24,11 +24,13 @@ export function NavTop(){
       document.body.style.width = "100vw";
       window.scrollTo(0, 0);
     } else {
+      if (scrollPosition !== window.scrollY) {
+        window.scrollTo(0, scrollPosition);
+      }
       document.body.style.position = "";
       document.body.style.top = "";
-      window.scrollTo(0, scrollPosition);
     }
-  }, [navItemsActive]);
+  }, [navItemsActive]);  
 
   useEffect(() => {
     const handleScroll = () => {

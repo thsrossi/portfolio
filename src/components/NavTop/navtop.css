@@ -56,12 +56,6 @@
 
 @media (max-width: 767.98px){
 
-    navtop ul a:not(:last-child):hover{
-        color: #6ad1cf!important;
-        background-color: #383838;
-        cursor: pointer
-    }
-
     .navtop nav ul{
         display:flex!important;
         flex-direction: column!important;
@@ -92,5 +86,6 @@
     .navtop ul a:hover{
         padding-inline-start: 1em;
         border-left: 0.5em solid #6ad1cf;
+        color: #6ad1cf;
     }
 }
