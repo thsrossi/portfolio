@@ -12,6 +12,7 @@ export function NavTop(){
       setNavItemsActive(false);
       document.body.style.position = "";
       document.body.style.top = "";
+      document.body.style.midth = "100vw";
       window.scrollTo(0, scrollPosition);
     }
   };
@@ -29,6 +30,7 @@ export function NavTop(){
       }
       document.body.style.position = "";
       document.body.style.top = "";
+      document.body.style.width = "100vw";
     }
   }, [navItemsActive]);  
 
