@@ -58,7 +58,7 @@ export function NavTop(){
             align-items-start px-4 px-md-5
             `}>
             <div className="matheus d-flex flex-row align-items-center">
-                <h2 className="mb-0"><span>Matheus</span> Rossi</h2>
+                <a style={{cursor:'pointer'}} href="#main"><h2 className="mb-0"><span>Matheus</span> Rossi</h2></a>
                 
             </div>
             <nav className="d-md-block d-flex justify-content-center flex-column align-items-center" >
