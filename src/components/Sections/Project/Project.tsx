@@ -19,7 +19,7 @@ export default function Project() {
                         />
 
                     </div>
-                    <div className="col-12 col-md-6 px-lg-5">
+                    <div className="col-12 col-md-6 px-lg-5 ">
                         
                         <Card 
                             nome='Shopping Cart React'
