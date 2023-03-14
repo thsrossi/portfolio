@@ -1,0 +1,26 @@
+.projectCard {
+    background: linear-gradient(125deg, #25262a, 0%, rgba(40, 41, 45, 0.8) 68%, rgba(40, 41, 45, 0.20379901960784315) 100%);
+    border: none;
+    border-radius: 18px;
+}
+
+.projectCard>* {
+    border: none
+}
+
+.projectCard a {
+    color: #6ad1cf;
+    text-decoration: none
+}
+
+.projectCard a:hover {
+    text-decoration: underline
+}
+
+
+
+.tag {
+    background-color: #4d4e52;
+    font-size: 0.8rem;
+    color: #d7d7d7
+}

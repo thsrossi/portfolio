@@ -18,8 +18,15 @@
     z-index: 1;
 }
 
+.description span{
+  border-right: .15em solid #6ad1cf;
+  animation: blinking .7s infinite
+}
 
-
+@keyframes blinking {
+  from { border-color: transparent }
+  to { border-color: #6ad1cf; }
+}
 
 @keyframes float{
     0%{
