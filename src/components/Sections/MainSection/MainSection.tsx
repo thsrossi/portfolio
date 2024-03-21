@@ -11,7 +11,7 @@ export default function MainSection(){
     ""
   )
   const [fullDesciption, setFullDesciption] = useState(
-    "Sou desenvolvedor Front-End focado em React, performance e aplicações responsivas, com ampla experiência em tecnologias como TypeScript, HTML, CSS, JavaScript, Material-UI e Git. Atualmente, trabalho como Desenvolvedor Front-end na MaxCore Informática, onde utilizo ReactJS com TypeScript e tecnologias suplementares como Git, Chakra UI, Material UI, Bootstrap."
+    "Sou desenvolvedor Front-end e mobile focado em React, performance e aplicações responsivas, com ampla experiência em tecnologias como TypeScript, JavaScript, Material-UI e Git. Atualmente, trabalho como Desenvolvedor Front-end e mobile na MaxCore Informática, onde utilizo ReactJS e React Native com TypeScript e tecnologias suplementares como Git, Chakra UI, Material UI, Bootstrap."
   )
   const [index, setIndex] = useState(0)
 

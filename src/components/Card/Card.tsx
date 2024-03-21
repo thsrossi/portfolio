@@ -5,7 +5,7 @@ interface CardProps{
     nome: string;
     tecnologias: [string, string];
     imagem: string;
-    repositorio: string;
+    repositorio?: string;
     aplicacao?: string;
 
 }
@@ -24,14 +24,15 @@ export default function Card({nome, tecnologias, imagem, repositorio, aplicacao}
                 <img src={imagem} width={'100%'} />
                 <div className='mt-5 d-flex justify-content-end'>
 
-                <a
+                {repositorio &&
+                    <a
                     href={repositorio}
                     target='_blank'
                     className='mr-3'
                     >
-                    Repositório
-
-                </a>
+                        Repositório
+                    </a>
+                }
                 <a
                     href={aplicacao}
                     target='_blank'

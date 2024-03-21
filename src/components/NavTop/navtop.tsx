@@ -92,6 +92,7 @@ export function NavTop(){
             } ref={navRef}>
                 <a className="my-0 mr-md-3 px-md-1 main" onClick={()=>setNavItemsActive(false)} href="#main">Home</a>
                 <a className="my-0 mr mr-md-3 px-md-1 experience" onClick={()=>setNavItemsActive(false)} href="#experience" >Experiência</a>
+                <a className="my-0 mr mr-md-3 px-md-1 projects" onClick={()=>setNavItemsActive(false)} href="#projects" >Projetos</a>
                 {/* <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Projetos</a>
                 <a className="my-0 mr mr-md-3 px-md-1" onClick={()=>setNavItemsActive(false)}>Contato</a> */}
                 <a href="mailto:matheusbprossi@gmail.com?subject=Olá,%20vim%20por%20seu%20portfolio" className="d-none d-md-flex align-items-center">
