@@ -1,7 +1,7 @@
 import Card from "../../Card/Card";
 import RestCountriesImage from "../../../assets/images/RestCountries.png"
 import ReactCartImage from "../../../assets/images/reactcartshopping.jpeg"
-import EzmediImage from "../../../assets/images/Ezmedi.png"
+import SFChopp from "../../../assets/images/SFChopp.png"
 
 export default function Project() {
     return (
@@ -15,7 +15,7 @@ export default function Project() {
                             nome='SF Chopp e Eventos'
                             tecnologias={['React', 'ChakraUI']}
                             aplicacao="https://www.sfchopp.com.br/"
-                            imagem={EzmediImage}
+                            imagem={SFChopp}
                         />
 
                     </div>
