@@ -12,9 +12,9 @@ export default function Project() {
                         <h2 className='pb-5 pb-lg-3'>Projetos</h2>
                         <p style={{'color':'#d7d7d7', fontSize:'0.95rem', marginBottom: '4.5rem'}}>Últimos projetos realizados</p>
                         <Card 
-                            nome='Ezmedi'
+                            nome='SF Chopp e Eventos'
                             tecnologias={['React', 'ChakraUI']}
-                            aplicacao="https://agendamento.ezmedi.com.br/"
+                            aplicacao="https://www.sfchopp.com.br/"
                             imagem={EzmediImage}
                         />
 
